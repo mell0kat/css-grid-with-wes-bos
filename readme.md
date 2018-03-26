@@ -64,6 +64,57 @@ grid-column-end: auto;
 * autofit in combination with minmax() deliver a reponsive grid
 ` grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));`
 
+### Grid template areas
+* Use grid-template-areas on container to name your sections
+* Use grid-area to assign your grid items to take up specified space
+* Can use area-names to specify start / end of columns and rows
+```
+		.container {
+      grid-template-areas:
+      "P P P P H H H H"
+      "P P P P H H H H"
+      "P P P P H H H H"
+      "P P P P H H H H"
+    }
 
+    .item3 {
+      grid-column: P-start / P-end
+    }
+```
+
+### Naming lines
+* Use square brackets when defining columns and rows
+```
+ grid-template-columns: [site-left] 1fr [content-start] 500px [contane-end] 1fr [site-right];
+ ```
+
+### Grid auto-flow dense
+* shifts items around to pack in as many with as little empty space
+* CSS will always layout the items that are more specific (e.g. grid-column-end: -1) first, and then do autoflow for the rest
+
+### Grid alignment and centering
+* what's available:
+	* justify-items
+	* align-items
+	* justify-content
+	* align-content (these two used for dealing with space between / around items if you have extra space)
+	* justify-self
+	* align-self
+* values can be:
+  * start
+  * end
+  * stretch
+  * center
+* place-items is a shorthand combination of justify-items and align-items
+
+* justify along row axis
+* align along column axis
+
+### Nesting grids
+* is possible
+
+### Image Gallery
+* Can overlay items by placing them in the same row & column and then use z- index as needed
+* #rrggbbaa (who knew??)
 
 
