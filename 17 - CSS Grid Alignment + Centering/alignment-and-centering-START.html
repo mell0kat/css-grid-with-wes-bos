@@ -70,7 +70,20 @@
     .container {
       display: grid;
       grid-gap: 20px;
-      grid-template-columns: repeat(10, 1fr);
+      border: 10px solid var(--yellow);
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 100px);
+      justify-items: start;
+      align-items: stretch;
+      justify-content: space-around;
+    }
+
+    .itm {
+      background: mistyrose;
+    }
+
+    .itm5 {
+      justify-self: end;
     }
   </style>
 </body>
