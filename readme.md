@@ -117,4 +117,12 @@ grid-column-end: auto;
 * Can overlay items by placing them in the same row & column and then use z- index as needed
 * #rrggbbaa (who knew??)
 
-
+### Flexbox v. CSS Grid
+* Grid can do everything CSS Grid can do
+* Flexbox benefits
+  * Can animate values
+* Flexbox drawbacks
+  * No concept of 'flex gaps'
+* Grid benefits
+  * More consistent across browsers
+* When you have a task, try out both approaches and see what works!
