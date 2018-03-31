@@ -126,3 +126,7 @@ grid-column-end: auto;
 * Grid benefits
   * More consistent across browsers
 * When you have a task, try out both approaches and see what works!
+
+
+### Bootstrappy grid
+* Can set CSS variables with inline styles
